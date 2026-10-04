@@ -69,7 +69,78 @@
   </style>
 
   <!-- Background -->
-  <rect width="1200" height="760" fill="#15171B"/>
+ <defs>
+  <!--
+    True alpha feather:
+    the mask itself is blurred, rather than adding
+    a blurred shadow around a solid rectangle.
+  -->
+  <filter
+    id="maskBlur"
+    x="-15%"
+    y="-15%"
+    width="130%"
+    height="130%"
+    color-interpolation-filters="sRGB"
+  >
+    <feGaussianBlur stdDeviation="32"/>
+  </filter>
+
+  <mask
+    id="edgeFade"
+    maskUnits="userSpaceOnUse"
+    maskContentUnits="userSpaceOnUse"
+    x="0"
+    y="0"
+    width="1200"
+    height="760"
+  >
+    <!-- Transparent base -->
+    <rect
+      x="0"
+      y="0"
+      width="1200"
+      height="760"
+      fill="black"
+    />
+
+    <!--
+      Visible area.
+      Blur turns this white rectangle into a gradual
+      white → gray → black alpha transition.
+    -->
+    <rect
+      x="42"
+      y="42"
+      width="1116"
+      height="676"
+      rx="8"
+      fill="white"
+      filter="url(#maskBlur)"
+    />
+  </mask>
+</defs>
+
+<!-- Everything visible in the card goes inside this group -->
+<g mask="url(#edgeFade)">
+
+  <!-- Background -->
+  <rect
+    x="0"
+    y="0"
+    width="1200"
+    height="760"
+    fill="#15171B"
+  />
+
+  <!-- YOUR EXISTING CONTENT STARTS HERE -->
+
+  <!-- philosophy -->
+  <!-- finance card -->
+  <!-- agent card -->
+  <!-- all text / borders -->
+
+</g>
 
   <!-- Philosophy -->
   <rect
