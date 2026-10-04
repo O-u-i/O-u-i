@@ -1,0 +1,278 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="1200"
+  height="760"
+  viewBox="0 0 1200 760"
+  role="img"
+  aria-labelledby="title desc"
+>
+  <title id="title">Sorenst Fragments</title>
+  <desc id="desc">
+    Fragments of thought, finance research and agent systems.
+  </desc>
+
+  <style>
+    .title {
+      font-family: "Archivo Variable", Archivo, Arial, Helvetica, sans-serif;
+      font-size: 38px;
+      font-weight: 600;
+      letter-spacing: -1.6px;
+      fill: #F8F8F6;
+    }
+
+    .content {
+      font-family: "Archivo Variable", Archivo, Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: 0;
+      fill: #F8F8F6;
+    }
+
+    .content-small {
+      font-family: "Archivo Variable", Archivo, Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      letter-spacing: 0;
+      fill: #F8F8F6;
+    }
+
+    .content-tight {
+      font-family: "Archivo Variable", Archivo, Arial, Helvetica, sans-serif;
+      font-size: 17.5px;
+      font-weight: 400;
+      letter-spacing: 0;
+      fill: #F8F8F6;
+    }
+
+    .philosophy {
+      font-family: "Archivo Variable", Archivo, Arial, Helvetica, sans-serif;
+      font-size: 25px;
+      font-weight: 400;
+      letter-spacing: -0.5px;
+      fill: #F8F8F6;
+    }
+
+    .card {
+      fill: #181A1F;
+      stroke: #34383F;
+    }
+
+    .divider {
+      stroke: #34383F;
+      stroke-width: 1;
+    }
+
+    .divider-soft {
+      stroke: #2B2E34;
+      stroke-width: 1;
+    }
+  </style>
+
+  <!-- Background -->
+  <rect width="1200" height="760" fill="#15171B"/>
+
+  <!-- Philosophy -->
+  <rect
+    class="card"
+    x="48.5"
+    y="48.5"
+    width="1103"
+    height="235"
+  />
+
+  <text
+    class="philosophy"
+    x="90"
+    y="112"
+  >
+    <tspan x="90" dy="0">
+      I do not know which projects will matter, or where this path will lead.
+    </tspan>
+
+    <tspan x="90" dy="42">
+      What remains are fragments — projects, questions, failures and unfinished attempts —
+    </tspan>
+
+    <tspan x="90" dy="42">
+      quietly shaping how I think, what I build, and whatever comes next.
+    </tspan>
+  </text>
+
+  <!-- Finance -->
+  <rect
+    class="card"
+    x="48.5"
+    y="308.5"
+    width="539"
+    height="403"
+  />
+
+  <text
+    class="title"
+    x="78"
+    y="370"
+  >
+    FINANCE / PORTFOLIO
+  </text>
+
+  <line
+    class="divider"
+    x1="78"
+    y1="402.5"
+    x2="558"
+    y2="402.5"
+  />
+
+  <text
+    class="content"
+    x="78"
+    y="465"
+  >
+    Portfolio Management
+  </text>
+
+  <text
+    class="content"
+    x="338"
+    y="465"
+  >
+    Asset Allocation
+  </text>
+
+  <line
+    class="divider-soft"
+    x1="78"
+    y1="493.5"
+    x2="558"
+    y2="493.5"
+  />
+
+  <text
+    class="content"
+    x="78"
+    y="550"
+  >
+    Risk / Return
+  </text>
+
+  <text
+    class="content"
+    x="338"
+    y="550"
+  >
+    Position Review
+  </text>
+
+  <line
+    class="divider-soft"
+    x1="78"
+    y1="578.5"
+    x2="558"
+    y2="578.5"
+  />
+
+  <text
+    class="content"
+    x="78"
+    y="635"
+  >
+    Decision Frameworks
+  </text>
+
+  <text
+    class="content"
+    x="338"
+    y="635"
+  >
+    Portfolio Analytics
+  </text>
+
+  <!-- Agent -->
+  <rect
+    class="card"
+    x="612.5"
+    y="308.5"
+    width="539"
+    height="403"
+  />
+
+  <text
+    class="title"
+    x="642"
+    y="370"
+  >
+    AGENT / HARNESS
+  </text>
+
+  <line
+    class="divider"
+    x1="642"
+    y1="402.5"
+    x2="1122"
+    y2="402.5"
+  />
+
+  <text
+    class="content"
+    x="642"
+    y="465"
+  >
+    Harness Design
+  </text>
+
+  <text
+    class="content"
+    x="902"
+    y="465"
+  >
+    Agent Runtime
+  </text>
+
+  <line
+    class="divider-soft"
+    x1="642"
+    y1="493.5"
+    x2="1122"
+    y2="493.5"
+  />
+
+  <text
+    class="content-small"
+    x="642"
+    y="550"
+  >
+    Workflow / Orchestration
+  </text>
+
+  <text
+    class="content"
+    x="902"
+    y="550"
+  >
+    Context / Memory
+  </text>
+
+  <line
+    class="divider-soft"
+    x1="642"
+    y1="578.5"
+    x2="1122"
+    y2="578.5"
+  />
+
+  <text
+    class="content"
+    x="642"
+    y="635"
+  >
+    Tools / MCP
+  </text>
+
+  <text
+    class="content-tight"
+    x="902"
+    y="635"
+  >
+    Evaluation / Guardrails
+  </text>
+</svg>
