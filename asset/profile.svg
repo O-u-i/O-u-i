@@ -14,7 +14,13 @@
   <defs>
     <!-- soft shadow -->
     <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000000" flood-opacity="0.22"/>
+      <feDropShadow
+        dx="0"
+        dy="14"
+        stdDeviation="18"
+        flood-color="#000000"
+        flood-opacity="0.22"
+      />
     </filter>
 
     <!-- subtle panel gradient -->
@@ -32,22 +38,22 @@
     <style>
       .title {
         font-family: Inter, "Segoe UI", Arial, Helvetica, sans-serif;
-        font-size: 24px;
+        font-size: 30px;
         font-weight: 650;
         fill: #F5F2EC;
-        letter-spacing: -0.6px;
+        letter-spacing: -0.75px;
       }
 
       .body {
         font-family: Inter, "Segoe UI", Arial, Helvetica, sans-serif;
-        font-size: 15px;
+        font-size: 18px;
         font-weight: 430;
         fill: #F5F2EC;
       }
 
       .copy {
         font-family: Inter, "Segoe UI", Arial, Helvetica, sans-serif;
-        font-size: 14px;
+        font-size: 17px;
         font-weight: 430;
         fill: #F5F2EC;
       }
@@ -62,13 +68,16 @@
 
   <!-- transparent background -->
 
+  <!-- ========================================================= -->
   <!-- TOP PHILOSOPHY CARD -->
+  <!-- ========================================================= -->
+
   <g filter="url(#cardShadow)">
     <rect
-      x="110"
-      y="72"
-      width="980"
-      height="204"
+      x="40"
+      y="38"
+      width="1120"
+      height="230"
       rx="12"
       fill="url(#topPanelFill)"
       stroke="#242B36"
@@ -76,13 +85,16 @@
     />
   </g>
 
+  <!-- ========================================================= -->
   <!-- LEFT CARD -->
+  <!-- ========================================================= -->
+
   <g filter="url(#cardShadow)">
     <rect
-      x="110"
-      y="316"
-      width="468"
-      height="304"
+      x="40"
+      y="304"
+      width="535"
+      height="402"
       rx="12"
       fill="url(#panelFill)"
       stroke="#242B36"
@@ -90,13 +102,16 @@
     />
   </g>
 
+  <!-- ========================================================= -->
   <!-- RIGHT CARD -->
+  <!-- ========================================================= -->
+
   <g filter="url(#cardShadow)">
     <rect
-      x="622"
-      y="316"
-      width="468"
-      height="304"
+      x="625"
+      y="304"
+      width="535"
+      height="402"
       rx="12"
       fill="url(#panelFill)"
       stroke="#242B36"
@@ -104,48 +119,147 @@
     />
   </g>
 
+  <!-- ========================================================= -->
   <!-- PHILOSOPHY TEXT -->
+  <!-- ========================================================= -->
+
   <g class="copy">
-    <text x="148" y="124">
-      <tspan x="148" dy="0">I do not know which projects will matter, or where this path will lead.</tspan>
-      <tspan x="148" dy="34">What remains are fragments — projects, questions, failures and unfinished attempts —</tspan>
-      <tspan x="148" dy="34">quietly shaping how I think, what I build, and whatever comes next.</tspan>
+    <text x="82" y="102">
+      <tspan x="82" dy="0">
+        I do not know which projects will matter, or where this path will lead.
+      </tspan>
+
+      <tspan x="82" dy="42">
+        What remains are fragments — projects, questions, failures and unfinished attempts —
+      </tspan>
+
+      <tspan x="82" dy="42">
+        quietly shaping how I think, what I build, and whatever comes next.
+      </tspan>
     </text>
   </g>
 
-  <!-- LEFT TITLE -->
-  <text class="title" x="136" y="372">FINANCE / PORTFOLIO</text>
-  <line class="line" x1="136" y1="400" x2="552" y2="400"/>
+  <!-- ========================================================= -->
+  <!-- LEFT / FINANCE -->
+  <!-- ========================================================= -->
 
-  <!-- LEFT ROW 1 -->
-  <text class="body" x="136" y="452">Portfolio Management</text>
-  <text class="body" x="358" y="452">Asset Allocation</text>
-  <line class="line" x1="136" y1="478" x2="552" y2="478"/>
+  <text class="title" x="72" y="370">
+    FINANCE / PORTFOLIO
+  </text>
 
-  <!-- LEFT ROW 2 -->
-  <text class="body" x="136" y="528">Risk / Return</text>
-  <text class="body" x="358" y="528">Position Review</text>
-  <line class="line" x1="136" y1="554" x2="552" y2="554"/>
+  <line
+    class="line"
+    x1="72"
+    y1="407"
+    x2="543"
+    y2="407"
+  />
 
-  <!-- LEFT ROW 3 -->
-  <text class="body" x="136" y="604">Decision Frameworks</text>
-  <text class="body" x="358" y="604">Portfolio Analytics</text>
+  <!-- ROW 1 -->
 
-  <!-- RIGHT TITLE -->
-  <text class="title" x="648" y="372">AGENT / HARNESS</text>
-  <line class="line" x1="648" y1="400" x2="1064" y2="400"/>
+  <text class="body" x="72" y="470">
+    Portfolio Management
+  </text>
 
-  <!-- RIGHT ROW 1 -->
-  <text class="body" x="648" y="452">Harness Design</text>
-  <text class="body" x="870" y="452">Agent Runtime</text>
-  <line class="line" x1="648" y1="478" x2="1064" y2="478"/>
+  <text class="body" x="338" y="470">
+    Asset Allocation
+  </text>
 
-  <!-- RIGHT ROW 2 -->
-  <text class="body" x="648" y="528">Workflow / Orchestration</text>
-  <text class="body" x="870" y="528">Context / Memory</text>
-  <line class="line" x1="648" y1="554" x2="1064" y2="554"/>
+  <line
+    class="line"
+    x1="72"
+    y1="505"
+    x2="543"
+    y2="505"
+  />
 
-  <!-- RIGHT ROW 3 -->
-  <text class="body" x="648" y="604">Tools / MCP</text>
-  <text class="body" x="870" y="604">Evaluation / Guardrails</text>
+  <!-- ROW 2 -->
+
+  <text class="body" x="72" y="568">
+    Risk / Return
+  </text>
+
+  <text class="body" x="338" y="568">
+    Position Review
+  </text>
+
+  <line
+    class="line"
+    x1="72"
+    y1="603"
+    x2="543"
+    y2="603"
+  />
+
+  <!-- ROW 3 -->
+
+  <text class="body" x="72" y="666">
+    Decision Frameworks
+  </text>
+
+  <text class="body" x="338" y="666">
+    Portfolio Analytics
+  </text>
+
+  <!-- ========================================================= -->
+  <!-- RIGHT / AGENT -->
+  <!-- ========================================================= -->
+
+  <text class="title" x="657" y="370">
+    AGENT / HARNESS
+  </text>
+
+  <line
+    class="line"
+    x1="657"
+    y1="407"
+    x2="1128"
+    y2="407"
+  />
+
+  <!-- ROW 1 -->
+
+  <text class="body" x="657" y="470">
+    Harness Design
+  </text>
+
+  <text class="body" x="923" y="470">
+    Agent Runtime
+  </text>
+
+  <line
+    class="line"
+    x1="657"
+    y1="505"
+    x2="1128"
+    y2="505"
+  />
+
+  <!-- ROW 2 -->
+
+  <text class="body" x="657" y="568">
+    Workflow / Orchestration
+  </text>
+
+  <text class="body" x="923" y="568">
+    Context / Memory
+  </text>
+
+  <line
+    class="line"
+    x1="657"
+    y1="603"
+    x2="1128"
+    y2="603"
+  />
+
+  <!-- ROW 3 -->
+
+  <text class="body" x="657" y="666">
+    Tools / MCP
+  </text>
+
+  <text class="body" x="923" y="666">
+    Evaluation / Guardrails
+  </text>
 </svg>
