@@ -6,344 +6,146 @@
   role="img"
   aria-labelledby="title desc"
 >
-  <title id="title">Sorenst Fragments</title>
+  <title id="title">Soren Fragments</title>
   <desc id="desc">
-    Fragments of thought, finance research and agent systems.
+    A GitHub profile fragments card about philosophy, finance and agent systems.
   </desc>
 
-  <style>
-    .title {
-      font-family: "Archivo Variable", Archivo, Arial, Helvetica, sans-serif;
-      font-size: 38px;
-      font-weight: 600;
-      letter-spacing: -1.6px;
-      fill: #F8F8F6;
-    }
+  <defs>
+    <!-- soft shadow -->
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000000" flood-opacity="0.22"/>
+    </filter>
 
-    .content {
-      font-family: "Archivo Variable", Archivo, Arial, Helvetica, sans-serif;
-      font-size: 20px;
-      font-weight: 400;
-      letter-spacing: 0;
-      fill: #F8F8F6;
-    }
+    <!-- subtle panel gradient -->
+    <linearGradient id="panelFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#141821"/>
+      <stop offset="100%" stop-color="#10141B"/>
+    </linearGradient>
 
-    .content-small {
-      font-family: "Archivo Variable", Archivo, Arial, Helvetica, sans-serif;
-      font-size: 18px;
-      font-weight: 400;
-      letter-spacing: 0;
-      fill: #F8F8F6;
-    }
+    <linearGradient id="topPanelFill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#141821"/>
+      <stop offset="50%" stop-color="#11161D"/>
+      <stop offset="100%" stop-color="#141821"/>
+    </linearGradient>
 
-    .content-tight {
-      font-family: "Archivo Variable", Archivo, Arial, Helvetica, sans-serif;
-      font-size: 17.5px;
-      font-weight: 400;
-      letter-spacing: 0;
-      fill: #F8F8F6;
-    }
+    <style>
+      .title {
+        font-family: Inter, "Segoe UI", Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        font-weight: 650;
+        fill: #F5F2EC;
+        letter-spacing: -0.6px;
+      }
 
-    .philosophy {
-      font-family: "Archivo Variable", Archivo, Arial, Helvetica, sans-serif;
-      font-size: 25px;
-      font-weight: 400;
-      letter-spacing: -0.5px;
-      fill: #F8F8F6;
-    }
+      .body {
+        font-family: Inter, "Segoe UI", Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: 430;
+        fill: #F5F2EC;
+      }
 
-    .card {
-      fill: #181A1F;
-      stroke: #34383F;
-    }
+      .copy {
+        font-family: Inter, "Segoe UI", Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 430;
+        fill: #F5F2EC;
+      }
 
-    .divider {
-      stroke: #34383F;
-      stroke-width: 1;
-    }
+      .line {
+        stroke: #2A313D;
+        stroke-width: 1;
+        shape-rendering: geometricPrecision;
+      }
+    </style>
+  </defs>
 
-    .divider-soft {
-      stroke: #2B2E34;
-      stroke-width: 1;
-    }
-  </style>
+  <!-- transparent background -->
 
-  <!-- Background -->
- <defs>
-  <!--
-    True alpha feather:
-    the mask itself is blurred, rather than adding
-    a blurred shadow around a solid rectangle.
-  -->
-  <filter
-    id="maskBlur"
-    x="-15%"
-    y="-15%"
-    width="130%"
-    height="130%"
-    color-interpolation-filters="sRGB"
-  >
-    <feGaussianBlur stdDeviation="32"/>
-  </filter>
-
-  <mask
-    id="edgeFade"
-    maskUnits="userSpaceOnUse"
-    maskContentUnits="userSpaceOnUse"
-    x="0"
-    y="0"
-    width="1200"
-    height="760"
-  >
-    <!-- Transparent base -->
+  <!-- TOP PHILOSOPHY CARD -->
+  <g filter="url(#cardShadow)">
     <rect
-      x="0"
-      y="0"
-      width="1200"
-      height="760"
-      fill="black"
+      x="110"
+      y="72"
+      width="980"
+      height="204"
+      rx="12"
+      fill="url(#topPanelFill)"
+      stroke="#242B36"
+      stroke-width="1"
     />
+  </g>
 
-    <!--
-      Visible area.
-      Blur turns this white rectangle into a gradual
-      white → gray → black alpha transition.
-    -->
+  <!-- LEFT CARD -->
+  <g filter="url(#cardShadow)">
     <rect
-      x="42"
-      y="42"
-      width="1116"
-      height="676"
-      rx="8"
-      fill="white"
-      filter="url(#maskBlur)"
+      x="110"
+      y="316"
+      width="468"
+      height="304"
+      rx="12"
+      fill="url(#panelFill)"
+      stroke="#242B36"
+      stroke-width="1"
     />
-  </mask>
-</defs>
+  </g>
 
-<!-- Everything visible in the card goes inside this group -->
-<g mask="url(#edgeFade)">
+  <!-- RIGHT CARD -->
+  <g filter="url(#cardShadow)">
+    <rect
+      x="622"
+      y="316"
+      width="468"
+      height="304"
+      rx="12"
+      fill="url(#panelFill)"
+      stroke="#242B36"
+      stroke-width="1"
+    />
+  </g>
 
-  <!-- Background -->
-  <rect
-    x="0"
-    y="0"
-    width="1200"
-    height="760"
-    fill="#15171B"
-  />
+  <!-- PHILOSOPHY TEXT -->
+  <g class="copy">
+    <text x="148" y="124">
+      <tspan x="148" dy="0">I do not know which projects will matter, or where this path will lead.</tspan>
+      <tspan x="148" dy="34">What remains are fragments — projects, questions, failures and unfinished attempts —</tspan>
+      <tspan x="148" dy="34">quietly shaping how I think, what I build, and whatever comes next.</tspan>
+    </text>
+  </g>
 
-  <!-- YOUR EXISTING CONTENT STARTS HERE -->
+  <!-- LEFT TITLE -->
+  <text class="title" x="136" y="372">FINANCE / PORTFOLIO</text>
+  <line class="line" x1="136" y1="400" x2="552" y2="400"/>
 
-  <!-- philosophy -->
-  <!-- finance card -->
-  <!-- agent card -->
-  <!-- all text / borders -->
+  <!-- LEFT ROW 1 -->
+  <text class="body" x="136" y="452">Portfolio Management</text>
+  <text class="body" x="358" y="452">Asset Allocation</text>
+  <line class="line" x1="136" y1="478" x2="552" y2="478"/>
 
-</g>
+  <!-- LEFT ROW 2 -->
+  <text class="body" x="136" y="528">Risk / Return</text>
+  <text class="body" x="358" y="528">Position Review</text>
+  <line class="line" x1="136" y1="554" x2="552" y2="554"/>
 
-  <!-- Philosophy -->
-  <rect
-    class="card"
-    x="48.5"
-    y="48.5"
-    width="1103"
-    height="235"
-  />
+  <!-- LEFT ROW 3 -->
+  <text class="body" x="136" y="604">Decision Frameworks</text>
+  <text class="body" x="358" y="604">Portfolio Analytics</text>
 
-  <text
-    class="philosophy"
-    x="90"
-    y="112"
-  >
-    <tspan x="90" dy="0">
-      I do not know which projects will matter, or where this path will lead.
-    </tspan>
+  <!-- RIGHT TITLE -->
+  <text class="title" x="648" y="372">AGENT / HARNESS</text>
+  <line class="line" x1="648" y1="400" x2="1064" y2="400"/>
 
-    <tspan x="90" dy="42">
-      What remains are fragments — projects, questions, failures and unfinished attempts —
-    </tspan>
+  <!-- RIGHT ROW 1 -->
+  <text class="body" x="648" y="452">Harness Design</text>
+  <text class="body" x="870" y="452">Agent Runtime</text>
+  <line class="line" x1="648" y1="478" x2="1064" y2="478"/>
 
-    <tspan x="90" dy="42">
-      quietly shaping how I think, what I build, and whatever comes next.
-    </tspan>
-  </text>
+  <!-- RIGHT ROW 2 -->
+  <text class="body" x="648" y="528">Workflow / Orchestration</text>
+  <text class="body" x="870" y="528">Context / Memory</text>
+  <line class="line" x1="648" y1="554" x2="1064" y2="554"/>
 
-  <!-- Finance -->
-  <rect
-    class="card"
-    x="48.5"
-    y="308.5"
-    width="539"
-    height="403"
-  />
-
-  <text
-    class="title"
-    x="78"
-    y="370"
-  >
-    FINANCE / PORTFOLIO
-  </text>
-
-  <line
-    class="divider"
-    x1="78"
-    y1="402.5"
-    x2="558"
-    y2="402.5"
-  />
-
-  <text
-    class="content"
-    x="78"
-    y="465"
-  >
-    Portfolio Management
-  </text>
-
-  <text
-    class="content"
-    x="338"
-    y="465"
-  >
-    Asset Allocation
-  </text>
-
-  <line
-    class="divider-soft"
-    x1="78"
-    y1="493.5"
-    x2="558"
-    y2="493.5"
-  />
-
-  <text
-    class="content"
-    x="78"
-    y="550"
-  >
-    Risk / Return
-  </text>
-
-  <text
-    class="content"
-    x="338"
-    y="550"
-  >
-    Position Review
-  </text>
-
-  <line
-    class="divider-soft"
-    x1="78"
-    y1="578.5"
-    x2="558"
-    y2="578.5"
-  />
-
-  <text
-    class="content"
-    x="78"
-    y="635"
-  >
-    Decision Frameworks
-  </text>
-
-  <text
-    class="content"
-    x="338"
-    y="635"
-  >
-    Portfolio Analytics
-  </text>
-
-  <!-- Agent -->
-  <rect
-    class="card"
-    x="612.5"
-    y="308.5"
-    width="539"
-    height="403"
-  />
-
-  <text
-    class="title"
-    x="642"
-    y="370"
-  >
-    AGENT / HARNESS
-  </text>
-
-  <line
-    class="divider"
-    x1="642"
-    y1="402.5"
-    x2="1122"
-    y2="402.5"
-  />
-
-  <text
-    class="content"
-    x="642"
-    y="465"
-  >
-    Harness Design
-  </text>
-
-  <text
-    class="content"
-    x="902"
-    y="465"
-  >
-    Agent Runtime
-  </text>
-
-  <line
-    class="divider-soft"
-    x1="642"
-    y1="493.5"
-    x2="1122"
-    y2="493.5"
-  />
-
-  <text
-    class="content-small"
-    x="642"
-    y="550"
-  >
-    Workflow / Orchestration
-  </text>
-
-  <text
-    class="content"
-    x="902"
-    y="550"
-  >
-    Context / Memory
-  </text>
-
-  <line
-    class="divider-soft"
-    x1="642"
-    y1="578.5"
-    x2="1122"
-    y2="578.5"
-  />
-
-  <text
-    class="content"
-    x="642"
-    y="635"
-  >
-    Tools / MCP
-  </text>
-
-  <text
-    class="content-tight"
-    x="902"
-    y="635"
-  >
-    Evaluation / Guardrails
-  </text>
+  <!-- RIGHT ROW 3 -->
+  <text class="body" x="648" y="604">Tools / MCP</text>
+  <text class="body" x="870" y="604">Evaluation / Guardrails</text>
 </svg>
